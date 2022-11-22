@@ -15,3 +15,7 @@ The source code for The Immortal Battle for Ohio, free.
 ** If you have enableHeaderCheck set to true in PraxisMappper, change headerAuthKey here to match serverAuthKey in your PraxisMapper appsettings.json file
 ** (Optional) set locationName to the name of the area you're covering in your server.
 ** (Optional) set your 4 default ProxyPlay points with a name, description and 10-digit PlusCode, leaving out the +. 
+
+# Licensing
+The code presented here (settings and .lua files) are under the MIT license.
+Graphics are released under a CC BY-SA 4.0 license.
