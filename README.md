@@ -10,12 +10,11 @@ The source code for The Immortal Battle for Ohio, free.
 * Install Solar2D on your computer
 * Get the source code for this app
 * Edit gameSettings.lua with the important bits of info
-
-** Set serverURL to the URL of your server when the game is running on a device. This usually requires an SSL connection.
-** Set serverSimulatorURL to the URL to use when you're in the Solar2D Simulator enviroment. This is usually expected to be localhost on a dev server, but could be a live server with SSL.
-** If you have enableHeaderCheck set to true in PraxisMappper, change headerAuthKey here to match serverAuthKey in your PraxisMapper appsettings.json file
-** (Optional) set locationName to the name of the area you're covering in your server.
-** (Optional) set your 4 default ProxyPlay points with a name, description and 10-digit PlusCode, leaving out the +. 
+* * Set serverURL to the URL of your server when the game is running on a device. This usually requires an SSL connection.
+* * Set serverSimulatorURL to the URL to use when you're in the Solar2D Simulator enviroment. This is usually expected to be localhost on a dev server, but could be a live server with SSL.
+* * If you have enableHeaderCheck set to true in PraxisMappper, change headerAuthKey here to match serverAuthKey in your PraxisMapper appsettings.json file
+* * (Optional) set locationName to the name of the area you're covering in your server.
+* * (Optional) set your 4 default ProxyPlay points with a name, description and 10-digit PlusCode, leaving out the +. 
 
 # Licensing
 The code presented here (settings and .lua files) are under the MIT license.
