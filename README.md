@@ -6,7 +6,7 @@ The source code for The Immortal Battle for Ohio, free.
 
 # Setup
 * Have a PraxisMapper instance setup and running. See the documentation on the PraxisMapper repo for details.
-* Copy the CreatureCollectorPlugin DLL to the plugins folder in PraxisMapper, then restart the server, hit the /Creature/Test endpoint, and restart the server again to make sure all initialization stuff has been done server-side.
+* Copy the PraxisCreatureCollectorPlugin DLL to the plugins folder in PraxisMapper, then restart the server, hit the /Creature/Test endpoint, and restart the server again to make sure all initialization stuff has been done server-side.
 * Install Solar2D on your computer
 * Get the source code for this app
 * Edit gameSettings.lua with the important bits of info
