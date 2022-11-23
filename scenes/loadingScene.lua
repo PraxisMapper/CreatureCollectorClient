@@ -31,7 +31,7 @@ function VersionCheck()
 
     if (event.response ~= clientVersion) then
         --Safe, lazy version
-        native.showAlert('Client Out of Date',  'Please get the latest version of the TIBO client from Ko-Fi. The server has been updated.',  VersionIsOld )
+        native.showAlert('Client Out of Date',  'Please get the latest version of the client. The server has been updated.',  VersionIsOld )
     end
  end
 
