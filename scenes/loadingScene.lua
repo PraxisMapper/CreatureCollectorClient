@@ -52,7 +52,9 @@ function VersionCheck()
             --delete existing files
             local img_path = system.pathForFile("", system.DocumentsDirectory)
             for file in lfs.dir(img_path) do
-                os.remove(system.pathForFile(file, system.DocumentsDirectory))
+                if EndsWith(file, "png") then
+                    os.remove(system.pathForFile(file, system.DocumentsDirectory))
+                end
             end
             GetAllCreatureImages()
             dataVersions.artDataVersion = version
