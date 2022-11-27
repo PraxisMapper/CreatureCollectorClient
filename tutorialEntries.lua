@@ -15,7 +15,7 @@ tutorialDataSets =
         {image = "themables/TutorialGuy.png", text ="You just woke up from one of those! Don't worry too much about vengeance, we all just accept the reset in our society. No one's gonna hold grudges that you were gone for a while or forgot who they were.", specialFunc = nil, },
         {image = "themables/TutorialGuy.png", text ="Right now, we're all fighting over a place called |location. It's pretty important. It's the center of the world!", specialFunc = nil, },
         {image = "themables/TutorialGuy.png", text ="Not just this plane. All planes. |location is the very center of all creation. And we're in an all-hands-on-deck brawl to decide who owns it.", specialFunc = nil, },
-        {image = "themables/TutorialGuy.png", text ="Looks like we coalesced into 4 separate teams this time. I have to admin, I also wasn't awake when that happened. You'll want to pick one pretty quick before you get amnesia again.", specialFunc = nil, },
+        {image = "themables/TutorialGuy.png", text ="Looks like we coalesced into 4 separate teams this time. I have to admit, I also wasn't awake when that happened. You'll want to pick one pretty quick before you get amnesia again.", specialFunc = nil, },
         {image = "themables/TutorialGuy.png", text ="If you need help picking a team, I suggest thinking about apples while looking at your choices. Always works for me!", specialFunc = nil, },
         {image = "themables/TutorialGuy.png", text ="", specialFunc = JumpToTeam, },
     },
