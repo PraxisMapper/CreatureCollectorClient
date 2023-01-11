@@ -67,9 +67,9 @@ end
 
 --my own pass at the algorithm. shorter, less thorough.
 function EncodeLatLon(latitude, longitude, codeLength)
-    local code = ""
-    local lat =  0 math.floor((latitude + 90) * 8000)
-    local long = 0 math.floor((longitude + 180) * 8000)
+    local code = ''
+    local lat =  0
+    local long = 0
     local digit11 = ''
     local nextLongChar = ''
     local nextLatChar = ''
