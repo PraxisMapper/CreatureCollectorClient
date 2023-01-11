@@ -68,20 +68,27 @@ end
 --my own pass at the algorithm. shorter, less thorough.
 function EncodeLatLon(latitude, longitude, codeLength)
     local code = ""
-    local lat = math.floor((latitude + 90) * 8000)
-    local long = math.floor((longitude + 180) * 8000)
+    local lat =  0 math.floor((latitude + 90) * 8000)
+    local long = 0 math.floor((longitude + 180) * 8000)
     local digit11 = ''
+    local nextLongChar = ''
+    local nextLatChar = ''
     if (codeLength == 11) then
-        local latGrid = lat % 5
-        local lonGrid = long % 4
-        local indexDigit = (latGrid * GRID_COLUMNS_ + lonGrid) + 1
+        lat =  math.floor((latitude + 90) * 40000)
+        long = math.floor((longitude + 180) * 32000)
+        local nextLonIndex = (long % 4) 
+        local nextLatIndex = (lat % 5)
+        local indexDigit = (nextLatIndex * GRID_COLUMNS_ + nextLonIndex) + 1
         digit11 = CODE_ALPHABET_:sub(indexDigit, indexDigit)
+
+        lat = math.floor(lat / 5)
+        long = math.floor(long / 4)
     end
 
     -- 10 most significant digits
     for i= 1, 5, 1 do
-        local nextLongChar = (long % 20) + 1 
-        local nextLatChar = (lat % 20) + 1
+        nextLongChar = (long % 20) + 1 
+        nextLatChar = (lat % 20) + 1
 
         code = CODE_ALPHABET_:sub(nextLatChar, nextLatChar) .. CODE_ALPHABET_:sub(nextLongChar, nextLongChar) .. code
         lat = math.floor(lat / 20)
@@ -95,7 +102,6 @@ function EncodeLatLon(latitude, longitude, codeLength)
 
     return code:sub(1,8) .. SEPARATOR_ .. code:sub(9, 11);
 end
-
 function ShiftCell(pluscode, Shift, position)
     --take the current cell, move it some number of cells at some position. (Call this twice to do X and Y)
     --Shift should be under 20
